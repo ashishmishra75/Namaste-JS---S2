@@ -115,3 +115,5 @@ Promise.any([p1, p2, p3])
     console.error(err);
     console.log(err.errors);
   });
+
+//   that's an aggreate error
