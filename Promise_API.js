@@ -18,3 +18,5 @@ Promise.all([p1, p2, p3])
   .catch((err) => {
     console.log(err);
   });
+
+const pr = new Promise(function (resolve, reject) {});
