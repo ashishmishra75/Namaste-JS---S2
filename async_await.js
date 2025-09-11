@@ -1,11 +1,27 @@
 // ............................ Async Function..........................
 
+// const p = new Promise((resolve, reject) => {
+//   resolve("Promise resolved ");
+// });
+
+// async function getData() {
+//   return p;
+// }
+// const dataPromise = getData();
+
+// dataPromise.then((res) => console.log(res));
+
+// ....................................... Using await in async Function ......................................................
+
 const p = new Promise((resolve, reject) => {
   resolve("Promise resolved ");
 });
 
-async function getData() {
-  return p;
+async function resolvePromise() {
+  const value = await p;
+  console.log(value);
 }
 
-getData.then((res) => console.log(res));
+resolvePromise();
+
+console.log("hello");
